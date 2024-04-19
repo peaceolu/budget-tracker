@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="budgetstyle.css" />
+    
+  </head>
+  <body>
+
+    <h1   style="color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; font-size: 30px;"> Budget Tracker</h1>
+
+    <main>
+      <header>
+        <div>
+          <h5>Total Balance</h5>
+          <span id="balance">$0.00</span>
+        </div>
+        <div>
+          <h5>Income</h5>
+          <span id="income">$0.00</span>
+        </div>
+        <div>
+          <h5>Expense</h5>
+          <span id="expense">$0.00</span>
+        </div>
+      </header>
+
+      <section>
+        <h3>Transactions</h3>
+        <ul id="transactionList"></ul>
+        <div id="status"></div>
+      </section>
+
+      <section>
+        <h3>Add Transaction</h3>
+
+        <form id="transactionForm">
+          <div>
+            <label for="type">
+              <input type="checkbox" name="type" id="type" />
+              <div class="option">
+                <span>Expense</span>
+                <span>Income</span>
+              </div>
+            </label>
+          </div>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" required />
+          </div>
+          <div>
+            <label for="amount">Amount</label>
+            <input
+              type="number"
+              name="amount"
+              value="0"
+              min="0.01"
+              step="0.01"
+              required
+            />
+          </div>
+          <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" required />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+
+    
+   <div class="quotes">
+   
+    
+    <div  style="max-width:400px">
+      <div class="mySlides ">
+     
+        <p style="padding: 10px;"><i>"Money, like emotions, is something you must
+           control to keep your life on the right track." -<span style="color: blue;">Natasha Munson</span> </i></p>
+      </div>
+    
+     
+      <div class="mySlides ">
+     
+        <p style="padding: 10px;"><i>"The habit of saving is itself an education; it fosters every virtue, teaches self-denial, 
+          cultivates the sense of order, trains to forethought, and so broadens the mind." - <span style="color: blue;">T.T. Munger</span> </i></p>
+      </div>
+    
+      <div class="mySlides ">
+     
+        <p style="padding: 10px;"><i>"The only way to permanently change the temperature in the room is to reset the thermostat. In the same way, the only way to change your level 
+          of financial success 'permanently' is to reset your
+           financial thermostat.-"<span style="color: blue;">T. Harv Eker</span> </i></p>
+      </div>
+
+      <div class="mySlides ">
+     
+        <p style="padding: 10px;"><i>"Do not save what is left after spending, but spend what is left after saving."-
+          <span style="color: blue;">Warren Buffett</span> </i></p>
+      </div>
+
+      <div class="mySlides ">
+     
+        <p style="padding: 10px;"><i> "Financial peace isn't the acquisition of stuff. It's learning to live on less than you make,
+           so you can give money back and have money to invest.
+            You can't win until you do this." -<span style="color: blue;">Dave Ramsey</span> </i></p>
+      </div>
+
+      
+    </div></div>
+    <script src="budgetscript.js"></script>
+  </body>
+</html>
